@@ -1,0 +1,44 @@
+import "../../styles.scss";
+import navbarlogo from "../../img/icons/nav-logo.svg";
+import search from "../../img/icons/search.svg";
+import { Link } from "react-router-dom";
+import Button from "../../components/Button/Button";
+
+export const Navbar = () => {
+
+    
+  return (
+    <div className="navbar">
+      <div className="navbar-container">
+        <img src={navbarlogo} alt="logo" width={50} />
+        <div className="navbar-links">
+          <Link to="/">
+            <span>Home</span>
+          </Link>
+          <Link to="/">
+            <span>Category</span>
+          </Link>
+          <Link to="/">
+            <span>Random quote</span>
+          </Link>
+          <Link to="/">
+            <span>Popular</span>
+          </Link>
+        </div>
+        <div className="navbar-btn-container">
+          <div className="navbar-search">
+            <input type="text" />
+            <img src={search} alt="search" />
+          </div>
+          <div className="navbar-btn">
+            <Button text="Sign Up" />
+            <Button text="Sign In" />
+          </div>
+        </div>
+      </div>
+      <div className="theme-toggler">
+
+      </div>
+    </div>
+  );
+};

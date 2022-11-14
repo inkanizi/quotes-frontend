@@ -1,0 +1,41 @@
+@import url("./components/Navbar/Navbar.scss");
+@import url("./components/Button/Button.scss");
+@import url("./components/Aside/Aside.scss");
+@import url("./pages/Home/Home.scss");
+
+///
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #D8D8E4;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+///
+
+
+.quote-list{
+    width: 78%;
+    height: 1000px;
+    background: white;
+    border-radius: 15px;
+}
+
+.theme-toggler{
+    width: 50px;
+    height: 60px;
+    background: white;
+    margin-left: 10px;
+    border-radius: 15px;
+}
