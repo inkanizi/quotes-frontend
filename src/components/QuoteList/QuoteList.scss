@@ -1,0 +1,52 @@
+
+
+.quotelist{
+    margin-top: 15px;
+    width: 98%;
+    height: 1000px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    h1{
+        padding: 15px 0 0 15px;
+    }
+
+    .quotelist-btn-category{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        padding: 15px 0 0 15px;
+
+        button{
+            outline: none;
+            border: none;
+            margin-right: 10px;
+            background: #0010ED;
+            border: #0010ED 1px solid;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px 15px 0px 0px;
+            
+
+        }
+    }
+    .quotelist-btn-line{
+        height: 5px;
+        width: 95%;
+        background-color: #0010ED;
+        margin-left: 15px;
+        border-radius: 0 15px 15px 15px;
+    }
+
+    .quotelist-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1000px;
+    }
+}
+
+

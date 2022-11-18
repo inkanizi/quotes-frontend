@@ -5,3 +5,11 @@
     justify-content: space-between;
     flex-direction: row;
 }
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-end;
+}

@@ -1,6 +1,8 @@
 @import url("./components/Navbar/Navbar.scss");
 @import url("./components/Button/Button.scss");
 @import url("./components/Aside/Aside.scss");
+@import url("./components/DayQuote/DayQuote.scss");
+@import url("./components/QuoteList/QuoteList.scss");
 @import url("./pages/Home/Home.scss");
 
 ///
@@ -26,19 +28,3 @@ li{
     margin: 0 auto;
 }
 ///
-
-
-.quote-list{
-    width: 78%;
-    height: 1000px;
-    background: white;
-    border-radius: 15px;
-}
-
-.theme-toggler{
-    width: 50px;
-    height: 60px;
-    background: white;
-    margin-left: 10px;
-    border-radius: 15px;
-}
