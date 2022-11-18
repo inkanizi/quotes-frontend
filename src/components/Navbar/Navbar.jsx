@@ -1,8 +1,9 @@
 import "../../styles.scss";
 import navbarlogo from "../../img/icons/nav-logo.svg";
-import search from "../../img/icons/search.svg";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export const Navbar = () => {
 
@@ -27,8 +28,8 @@ export const Navbar = () => {
         </div>
         <div className="navbar-btn-container">
           <div className="navbar-search">
+            <i><FontAwesomeIcon icon={faSearch}/></i>
             <input type="text" />
-            <img src={search} alt="search" />
           </div>
           <div className="navbar-btn">
             <Button text="Sign Up" />

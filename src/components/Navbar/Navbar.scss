@@ -20,7 +20,7 @@
   }
 
   .navbar-links{
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: space-evenly;
 
@@ -33,9 +33,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 450px;
+    justify-content: space-between;
 
     .navbar-search{
-        display: none;
+      display: flex;
+      border-radius: 10px;
+      background: rgb(211, 210, 210);
+      padding: 7px;
+      
+      input{
+        padding: 4px;
+        outline: none;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        background: rgb(211, 210, 210);
+      }
     }
 
     .navbar-btn{
