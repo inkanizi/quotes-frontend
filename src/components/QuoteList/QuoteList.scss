@@ -3,11 +3,13 @@
 .quotelist{
     margin-top: 15px;
     width: 98%;
-    height: 1000px;
+    height: 2500px;
     background: white;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    
     
     h1{
         padding: 15px 0 0 15px;
@@ -45,7 +47,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 1000px;
+        flex-direction: column;
+        
     }
 }
 

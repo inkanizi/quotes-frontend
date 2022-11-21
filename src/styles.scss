@@ -3,12 +3,14 @@
 @import url("./components/Aside/Aside.scss");
 @import url("./components/DayQuote/DayQuote.scss");
 @import url("./components/QuoteList/QuoteList.scss");
+@import url("./components/Quote/Quote.scss");
 @import url("./pages/Home/Home.scss");
 
 ///
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     margin: 0 auto;

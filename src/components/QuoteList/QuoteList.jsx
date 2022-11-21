@@ -1,7 +1,9 @@
 import React from 'react'
+import Quote from '../Quote/Quote'
 
 const QuoteList = () => {
-  const tabs = ["1late", "2late", "3late"]
+  const tabs = ["New quote", "Editor's Choice"]
+  const quotes = [1,2,3,4,5,6,7]
 
   return (
     <div className='quotelist'>
@@ -15,7 +17,11 @@ const QuoteList = () => {
         </div>
         <div className='quotelist-btn-line'></div>
         <div className='quotelist-content'>
-          <h2 style={{"opacity": "0.3"}}>Тут будет список новых цитат</h2>
+          {quotes.map((obj, i)=>{
+            return(
+              <Quote/>
+            )
+          })}
         </div>
     </div>
   )

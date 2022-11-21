@@ -2,10 +2,19 @@
 .dayquote{
     width: 98%;
     background: white;
-    height: 200px;
+    height: 150px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    
+    h1{
+        padding:  0 20px;
+        font-size: 28px;
+        text-align: left;
+    }
+    h2{
+        padding: 5px 20px;
+        text-align: right;
+    }
 }

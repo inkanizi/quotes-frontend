@@ -1,0 +1,73 @@
+
+.quote{
+    background: transparent;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-shrink: 0;
+    margin: 5px;
+    align-items: center;
+    flex-direction: row;
+    
+
+    .quote-rate{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 50px;
+
+
+        .quote-rating{
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid greenyellow;
+            border-radius: 50%;
+            
+            span{
+                width: 20px;
+                height: 20px;
+                text-align: center;
+            }
+        }
+
+
+    }
+
+    .quote-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 10px;
+        height: 150px;
+
+        .quote-content-text{
+            font-size: 20px;
+        }
+
+        .quote-source{
+            padding: 10px 0 10px 0;
+            color: #0010ED;
+            text-decoration: underline 1px;
+        }
+
+        .quote-tags{
+            display: flex;
+            align-items: center;
+
+            span{
+                margin-right: 10px;
+                color: white;
+                border-radius: 10px;
+                padding: 5px;
+                background: #2f3bdf;
+            }
+        }
+    }
+}
+
