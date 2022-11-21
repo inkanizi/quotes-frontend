@@ -1,9 +1,9 @@
 .navbar {
-    margin: 15px 0 15px 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
+  margin: 15px 0 15px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .navbar-container {
@@ -20,30 +20,30 @@
     padding-left: 20px;
   }
 
-  .navbar-links{
+  .navbar-links {
     width: 500px;
     display: flex;
     justify-content: space-evenly;
 
-    span{
-        color: var(--text-color);;
+    span {
+      color: var(--text-color);
     }
   }
-  
-  .navbar-btn-container{
+
+  .navbar-btn-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 450px;
     justify-content: space-between;
 
-    .navbar-search{
+    .navbar-search {
       display: flex;
       border-radius: 10px;
       background: rgb(211, 210, 210);
       padding: 7px;
-      
-      input{
+
+      input {
         padding: 4px;
         outline: none;
         border: none;
@@ -52,16 +52,16 @@
       }
     }
 
-    .navbar-btn{
-        width: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .navbar-btn {
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }
 
-.theme-toggler{
+.theme-toggler {
   width: 50px;
   height: 60px;
   background: white;

@@ -1,3 +1,4 @@
+// Import components style
 @import url("./components/Navbar/Navbar.scss");
 @import url("./components/Button/Button.scss");
 @import url("./components/Aside/Aside.scss");
@@ -5,42 +6,48 @@
 @import url("./components/QuoteList/QuoteList.scss");
 @import url("./components/ThemeToggler/ThemeToggler.scss");
 @import url("./components/Quote/Quote.scss");
+
+// Import pages style
 @import url("./pages/Home/Home.scss");
+@import url("./pages/Login/Login.scss");
+@import url("./pages/Registration/Registration.scss");
+@import url("./pages/Category/Category.scss");
+@import url("./pages/RandomQuote/RandomQuote.scss");
 
-///
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+// Base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    margin: 0 auto;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--main-color);
-    color: var(--text-color);
-    transition: all 0.3s ease-in-out;
-}
-
-a{
-    text-decoration: none;
-}
-li{
-    list-style: none;
+body {
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--main-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+a {
+  text-decoration: none;
 }
-///
-html[data-theme="dark"]{
-    --main-color: #747475;
-    --text-color: white;
-    --block-color: rgb(43, 42, 42);
+li {
+  list-style: none;
 }
 
-html[data-theme="light"]{
-    --main-color: #D8D8E4;
-    --text-color: black;
-    --block-color: white
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+// Theme colors
+html[data-theme="dark"] {
+  --main-color: #747475;
+  --text-color: white;
+  --block-color: rgb(43, 42, 42);
+}
+
+html[data-theme="light"] {
+  --main-color: #d8d8e4;
+  --text-color: black;
+  --block-color: white;
 }
