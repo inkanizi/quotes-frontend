@@ -3,6 +3,7 @@
 @import url("./components/Aside/Aside.scss");
 @import url("./components/DayQuote/DayQuote.scss");
 @import url("./components/QuoteList/QuoteList.scss");
+@import url("./components/ThemeToggler/ThemeToggler.scss");
 @import url("./components/Quote/Quote.scss");
 @import url("./pages/Home/Home.scss");
 
@@ -15,7 +16,9 @@
 body{
     margin: 0 auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #D8D8E4;
+    background: var(--main-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
 }
 
 a{
@@ -30,3 +33,14 @@ li{
     margin: 0 auto;
 }
 ///
+html[data-theme="dark"]{
+    --main-color: #747475;
+    --text-color: white;
+    --block-color: rgb(43, 42, 42);
+}
+
+html[data-theme="light"]{
+    --main-color: #D8D8E4;
+    --text-color: black;
+    --block-color: white
+}

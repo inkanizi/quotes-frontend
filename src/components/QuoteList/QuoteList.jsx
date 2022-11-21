@@ -19,7 +19,7 @@ const QuoteList = () => {
         <div className='quotelist-content'>
           {quotes.map((obj, i)=>{
             return(
-              <Quote/>
+              <Quote key={i}/>
             )
           })}
         </div>

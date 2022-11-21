@@ -7,7 +7,7 @@
 
 .aside-main{
     height: 90%;
-    background: white;
+    background: var(--block-color);
     border-radius: 15px;
 }
 
@@ -37,7 +37,7 @@
 
     h3{
         padding-top: 20px;
-        text-decoration: underline 2px black;
+        text-decoration: underline 2px var(--text-color);
     }
 
     li{

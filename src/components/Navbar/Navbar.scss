@@ -7,7 +7,8 @@
 }
 
 .navbar-container {
-  background: white;
+  background: var(--block-color);
+  color: var(--text-color);
   height: 60px;
   width: 100%;
   border-radius: 17px;
@@ -25,7 +26,7 @@
     justify-content: space-evenly;
 
     span{
-        color: black;
+        color: var(--text-color);;
     }
   }
   
