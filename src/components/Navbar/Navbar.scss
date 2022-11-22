@@ -40,7 +40,7 @@
     .navbar-search {
       display: flex;
       border-radius: 10px;
-      background: rgb(211, 210, 210);
+      background: rgb(224, 224, 224);
       padding: 7px;
 
       input {
@@ -48,7 +48,7 @@
         outline: none;
         border: none;
         border-radius: 0 15px 15px 0;
-        background: rgb(211, 210, 210);
+        background: transparent;
       }
     }
 
