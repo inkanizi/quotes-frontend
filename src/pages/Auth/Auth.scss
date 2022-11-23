@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 800px;
     flex-direction: column;
 
     .auth-or{
@@ -70,7 +70,7 @@
     top: -14px;
     left: -15px;
     border-radius: 15px;
-    background-color: #0010ED;
+    background-color: var(--action-color);
     height: 50px;
     width: calc(100% + 30px);
 }

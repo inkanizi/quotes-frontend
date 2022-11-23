@@ -1,4 +1,5 @@
 import "../../styles.scss";
+import React from "react";
 import navbarlogo from "../../img/icons/nav-logo.svg";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
@@ -11,15 +12,63 @@ import {motion} from "framer-motion"
 export const Navbar = () => {
   const [focus, setFocus] = useState(false)
 
+  const [isHover, toggleHover] = React.useState(false);
+  const toggleHoverMenu = () => {
+    toggleHover(!isHover);
+  };
+
+  const subMenuAnimate = {
+    enter: {
+      opacity: 1,
+      rotateX: 0,
+      transition: {
+        duration: 0.5
+      },
+      display: "block"
+    },
+    exit: {
+      opacity: 0,
+      rotateX: -15,
+      transition: {
+        duration: 0.5,
+        delay: 0.3
+      },
+      transitionEnd: {
+        display: "none"
+      }
+    }
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-container">
         <Link to="/">
-          <img src={navbarlogo} alt="logo" width={50} />
+          <img src={navbarlogo} alt="logo" width={60}/>
         </Link>
         <div className="navbar-links">
           <Link to="/category">
-            <span>Category</span>
+            <motion.div 
+              className="navbar-menu-item"
+              onHoverStart={toggleHoverMenu}
+              onHoverEnd={toggleHoverMenu}
+            >
+              <span>Category</span>
+              <motion.div
+                className="navbar-sub-menu"
+                initial="exit"
+                animate={isHover ? "enter" : "exit"}
+                variants={subMenuAnimate}
+              >
+                <div className="navbar-sub-menu-container">
+                  <div className="navbar-sub-menu-item">Submenu Item 1</div>
+                  <div className="navbar-sub-menu-item">Submenu Item 2</div>
+                  <div className="navbar-sub-menu-item">Submenu Item 3</div>
+                  <div className="navbar-sub-menu-item">Submenu Item 4</div>
+                  <div className="navbar-sub-menu-item">Submenu Item 5</div>
+                </div>
+              </motion.div>
+            </motion.div>
+
           </Link>
           <Link to="/random">
             <span>Random quote</span>

@@ -5,12 +5,12 @@
 
 .aside-main {
   height: 90%;
-  background: var(--block-color);
+  background: var(--main-block-color);
   border-radius: 15px;
 }
 
 .btn-add {
-  background: #0010ed;
+  background: var(--action-color);
   color: white;
   font-size: 18px;
   outline: none;
@@ -41,7 +41,7 @@
     padding: 5px;
     transition: ease-in-out 0.3s;
     &:hover {
-      text-decoration: underline 1px #0010ed;
+      text-decoration: underline 1px var(--action-color);
     }
   }
 }

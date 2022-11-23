@@ -9,6 +9,7 @@
 @import url("./components/Footer/Footer.scss");
 @import url("./components/Login/Login.scss");
 @import url("./components/Registration/Registration.scss");
+@import url("./components/MobileNavbar/MobileNavbar.scss");
 
 // Import pages style
 @import url("./pages/Home/Home.scss");
@@ -25,7 +26,7 @@
 body {
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--main-color);
+  background: var(--bg-color);
   color: var(--text-color);
   transition: all 0.3s ease-in-out;
 }
@@ -43,13 +44,23 @@ li {
 }
 // Theme colors
 html[data-theme="dark"] {
-  --main-color: #747475;
-  --text-color: white;
-  --block-color: rgb(43, 42, 42);
+  --bg-color: #fafafa;
+  --main-text-color: black;
+  --primary-text-color: black;
+  --main-block-color: #E8EDE7;
+  --primary-block-color: #eeeeee;
+  --action-color: #0047AB;
+  --action-primary-color: #0010ED;
+  --action-text-color: #0010ED;
 }
 
 html[data-theme="light"] {
-  --main-color: #d8d8e4;
-  --text-color: black;
-  --block-color: white;
+  --bg-color: #E7EAEE;
+  --main-text-color: black;
+  --primary-text-color: black;
+  --main-block-color: #FCF7F8;
+  --primary-block-color: #E7EAEE;
+  --action-color: #0010ED;
+  --action-primary-color: #ABA9C3;
+  --action-text-color: #0010ED;
 }

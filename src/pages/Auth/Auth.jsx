@@ -30,15 +30,7 @@ const Auth = () => {
         </div>
 
           {!Boolean(activeIndex) ? 
-            (<motion.div
-              initial={{x: 1000}}
-              animate={{x: 0}}
-              transition={{times: 3}}
-            >
-                <Login
-                
-            />
-          </motion.div>)
+                <Login/>
           :  <Registration/>
           }
 

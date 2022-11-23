@@ -7,9 +7,6 @@ import { faLock, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 const Registration = () => {
   return (
     <div className="registration">
-        <h2>
-            Register
-        </h2>
         <form className='registration-form'>
         <div className='registration-input'>
                 <FontAwesomeIcon icon={faEnvelope}/>

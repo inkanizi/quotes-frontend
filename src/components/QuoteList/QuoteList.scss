@@ -4,7 +4,7 @@
     margin-top: 15px;
     width: 98%;
     height: 2500px;
-    background: var(--block-color);
+    background: var(--main-block-color);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
         justify-content: space-evenly;
         width: 90%;
         border-radius: 15px;
-        background: rgb(224, 224, 224);
+        background: var(--primary-block-color);
         margin: 30px 0 10px 50px;
         height: 50px;
 
@@ -56,7 +56,7 @@
     top: -11px;
     left: -15px;
     border-radius: 15px;
-    background-color: #0010ED;
+    background-color: var(--action-color);
     height: 50px;
     width: calc(100% + 30px);
 }
