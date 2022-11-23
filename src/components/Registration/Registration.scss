@@ -1,0 +1,37 @@
+
+
+.registration{
+    width: 300px;
+    height: 500px;
+    background: var(--block-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 90%;
+        height: 70%;
+    }
+
+    .registration-input{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background: rgb(224, 224, 224);
+        padding: 7px;
+
+      input {
+        padding: 4px;
+        outline: none;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        background: transparent;
+      }
+    }
+}

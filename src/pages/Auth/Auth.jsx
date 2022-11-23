@@ -5,6 +5,7 @@ import Login from '../../components/Login/Login'
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle, faFacebook, faVk } from "@fortawesome/free-brands-svg-icons"
+import Registration from '../../components/Registration/Registration';
 
 const Auth = () => {
   const [activeIndex, setActive] = React.useState(0);
@@ -28,7 +29,7 @@ const Auth = () => {
         </AnimateSharedLayout>
         </div>
 
-          {Boolean(activeIndex) ? 
+          {!Boolean(activeIndex) ? 
             (<motion.div
               initial={{x: 1000}}
               animate={{x: 0}}
@@ -38,16 +39,7 @@ const Auth = () => {
                 
             />
           </motion.div>)
-          : (<motion.div style={{"display": `${Boolean(activeIndex) ? "none": "flex"}`}}
-              initial={{x: -1000}}
-              animate={{x: 0}}
-              transition={{times: 3}}
-            >
-                <Login
-                
-            />
-          </motion.div>)
-            
+          :  <Registration/>
           }
 
           <div className='auth-or'>
