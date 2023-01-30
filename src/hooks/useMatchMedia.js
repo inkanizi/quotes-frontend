@@ -22,6 +22,7 @@ export const useMatchMedia = () => {
       mediaQueryLists.forEach((list) =>
         list.removeEventListener("change", handler)
       );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return ["isMobile", "isTablet", "isDesktop"].reduce(

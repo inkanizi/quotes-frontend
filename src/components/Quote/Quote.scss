@@ -8,7 +8,7 @@
   align-items: center;
   flex-direction: row;
 
-  .quote-content {
+  &-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -16,37 +16,35 @@
     padding-top: 10px;
     height: 150px;
 
-    .quote-content-text {
+    &__text {
       font-size: 24px;
     }
 
-    .quote-source {
+    &__source {
       padding: 20px 0 10px 0;
       color: var(--action-color);
       text-decoration: underline 1px;
     }
 
-    .quote-actions {
-        margin-top: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100px;
-        width: 90%;
-        text-align: center;
-
-      }
-
-    .quote-tags {
+    &__actions {
+      margin-top: 15px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      height: 100px;
+      width: 90%;
+      text-align: center;
+      &-tags {
+        display: flex;
+        align-items: center;
 
-      span {
-        margin-right: 10px;
-        color: #2f3bdf;
-        border-radius: 10px;
-        padding: 5px;
-        border: #2f3bdf 2px solid;
+        span {
+          margin-right: 10px;
+          color: #2f3bdf;
+          border-radius: 10px;
+          padding: 5px;
+          border: #2f3bdf 2px solid;
+        }
       }
     }
   }
